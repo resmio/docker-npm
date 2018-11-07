@@ -3,7 +3,7 @@ MAINTAINER developers@resmio.com
 
 RUN apt-get update && \
     apt-get install -y curl gettext && \
-    curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash - && \
+    curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
     apt-get install -y nodejs && \
     npm install yarn -g && \
     yarn global add https://github.com/jacobrask/jsxgettext/tarball/927a13b615f2c62fd25c0a79769bb5a75878353b && \
