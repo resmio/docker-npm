@@ -1,7 +1,7 @@
 FROM ubuntu:16.04
 MAINTAINER developers@resmio.com
 
-ENV NODE_OPTIONS --max_old_space_size=4096
+ENV NODE_OPTIONS --max_old_space_size=6144
 
 RUN apt-get update && \
     apt-get install -y curl gettext make g++ && \
