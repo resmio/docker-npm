@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:16.04
 MAINTAINER developers@resmio.com
 
 ENV NODE_OPTIONS --max_old_space_size=4096
