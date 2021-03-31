@@ -1,11 +1,11 @@
-FROM ubuntu:16.04
+FROM ubuntu:20.04
 MAINTAINER developers@resmio.com
 
 ENV NODE_OPTIONS --max_old_space_size=4096
 
 RUN apt-get update && \
     apt-get install -y curl gettext && \
-    curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
+    curl -sL https://deb.nodesource.com/setup_14.x | bash - && \
     apt-get install -y nodejs && \
     npm install yarn -g && \
     yarn global add https://github.com/jacobrask/jsxgettext/tarball/927a13b615f2c62fd25c0a79769bb5a75878353b && \
